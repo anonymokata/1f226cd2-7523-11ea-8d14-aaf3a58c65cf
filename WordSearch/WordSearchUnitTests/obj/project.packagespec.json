@@ -14,7 +14,11 @@
     },
     "frameworks": {
       "netcoreapp3.1": {
-        "projectReferences": {}
+        "projectReferences": {
+          "/Users/jacobkessler/RiderProjects/KataWordSearch/WordSearch/WordSearchApplication/WordSearchApplication.csproj": {
+            "projectPath": "/Users/jacobkessler/RiderProjects/KataWordSearch/WordSearch/WordSearchApplication/WordSearchApplication.csproj"
+          }
+        }
       }
     },
     "warningProperties": {
