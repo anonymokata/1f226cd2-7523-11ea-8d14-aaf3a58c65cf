@@ -17,4 +17,8 @@
       <ProjectReference Include="..\WordSearchApplication\WordSearchApplication.csproj" />
     </ItemGroup>
 
+    <ItemGroup>
+      <Folder Include="WordSearchGameTests" />
+    </ItemGroup>
+
 </Project>
