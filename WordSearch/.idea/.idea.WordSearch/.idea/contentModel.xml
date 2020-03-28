@@ -44,6 +44,7 @@
           <e p="WordSearchBoard_ConstructorTests.cs" t="Include" />
           <e p="WordSearchBoard_GetCharAtTests.cs" t="Include" />
           <e p="WordSearchBoard_GetLengthTests.cs" t="Include" />
+          <e p="WordSearchBoard_ToStringTests.cs" t="Include" />
         </e>
         <e p="WordSearchGameTests" t="Include" />
         <e p="WordSearchUnitTests.csproj" t="IncludeRecursive" />

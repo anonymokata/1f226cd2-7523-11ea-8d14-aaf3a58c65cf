@@ -62,7 +62,20 @@ namespace WordSearchApplication.Models
 
         public override string ToString()
         {
-            throw new NotImplementedException("TODO: Add ToString override to print out board");
+            string output = "";
+
+            for (int y = 0; y < GetLength(); y++)
+            {
+                for (int x = 0; x < GetLength(); x++)
+                {
+                    output += Convert.ToString(GetCharAt(x, y)) + ",";
+                }
+
+                output = output.TrimEnd(',');
+                output += "\n";
+            }
+
+            return output.TrimEnd('\n');
         }
     }
 }
