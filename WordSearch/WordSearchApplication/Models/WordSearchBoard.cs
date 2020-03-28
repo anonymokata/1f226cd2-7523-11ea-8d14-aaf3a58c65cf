@@ -60,6 +60,10 @@ namespace WordSearchApplication.Models
             return _board[x, y];
         }
 
+        /// <summary>
+        /// Overrides the ToString method to return a string representation of the board
+        /// </summary>
+        /// <returns>Returns string representation of the board</returns>
         public override string ToString()
         {
             string output = "";
