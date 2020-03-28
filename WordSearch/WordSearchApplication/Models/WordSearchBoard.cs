@@ -59,5 +59,10 @@ namespace WordSearchApplication.Models
             
             return _board[x, y];
         }
+
+        public override string ToString()
+        {
+            throw new NotImplementedException("TODO: Add ToString override to print out board");
+        }
     }
 }
