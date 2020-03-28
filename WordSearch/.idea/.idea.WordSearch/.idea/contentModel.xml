@@ -39,7 +39,11 @@
             </e>
           </e>
         </e>
-        <e p="UnitTest1.cs" t="Include" />
+        <e p="WordSearchBoardTests" t="Include">
+          <e p="WordSearchBoard_ConstructorTests.cs" t="Include" />
+          <e p="WordSearchBoard_GetCharAtTests.cs" t="Include" />
+          <e p="WordSearchBoard_GetLengthTests.cs" t="Include" />
+        </e>
         <e p="WordSearchUnitTests.csproj" t="IncludeRecursive" />
       </e>
     </e>
