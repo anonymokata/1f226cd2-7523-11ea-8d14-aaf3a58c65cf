@@ -6,7 +6,7 @@ namespace WordSearchApplication
     {
         private static void Main(string[] args)
         {
-            WordSearchGame game = new WordSearchGame();
+            //WordSearchGame game = new WordSearchGame();
             
             Console.WriteLine("Hello World!");
         }
