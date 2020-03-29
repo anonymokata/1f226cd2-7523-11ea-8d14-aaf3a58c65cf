@@ -9,12 +9,7 @@ namespace WordSearchUnitTests.WordSearchBoardTests
     public class WordSearchBoardConstructorTests
     {
         private WordSearchBoard Board;
-
-        //Constructor tests: 
-        //valid list of lines
-        //pass in null
-        //pass in list will null strings
-        //pass in list with empty strings
+        
         [TestMethod]
         [ExpectedException(typeof(NullReferenceException))]
         public void TestNullInputThrowsException()

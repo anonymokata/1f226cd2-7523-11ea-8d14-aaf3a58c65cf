@@ -59,6 +59,23 @@ namespace WordSearchApplication.Models
             
             return _board[x, y];
         }
+        
+        /// <summary>
+        /// Returns the character at a given position of the board. The position on the board is defined as Coordinate on the board
+        /// where (0,0) is the top left corner of the board. Incrementing x moves the position to the right and incrementing y
+        /// moves the position down.
+        /// </summary>
+        /// <param name="coordinate">Coordinate that contains the x,y position of a position on the board</param>
+        /// <returns>Returns the char at the given position on the board</returns>
+        /// <exception cref="ArgumentException">Throws an exception when the given coordinates are invalid.
+        /// Coordinates are invalid when either coordinate is less than 0 or greater than or equal to the length of the board</exception>
+        public char GetCharAt(Coordinate coordinate)
+        {
+            if (coordinate.X < 0 || coordinate.Y < 0) throw new ArgumentException("Cannot look for a position on the board less than 0");
+            if (coordinate.X >= GetLength() || coordinate.Y >= GetLength()) throw new ArgumentException("Cannot look for a position on the board greater than the size of the board");
+            
+            return _board[coordinate.X, coordinate.Y];
+        }
 
         /// <summary>
         /// Overrides the ToString method to return a string representation of the board
