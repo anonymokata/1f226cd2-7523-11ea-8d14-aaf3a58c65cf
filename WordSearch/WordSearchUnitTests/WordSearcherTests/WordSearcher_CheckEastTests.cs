@@ -31,7 +31,7 @@ namespace WordSearchUnitTests.WordSearcherTests
         public void TestWithWordToTheEastReturnCoordinates()
         {
             Coordinate coordinate = new Coordinate(1,1);
-            string word = "ED";
+            string word = "EF";
 
             _searcher = new WordSearcher();
             _results = _searcher.CheckEast(_board, coordinate, word);
@@ -39,7 +39,7 @@ namespace WordSearchUnitTests.WordSearcherTests
             Assert.AreEqual(2, _results.Count);
             Assert.AreEqual(1,_results[0].X);
             Assert.AreEqual(1,_results[0].Y);
-            Assert.AreEqual(0,_results[1].X);
+            Assert.AreEqual(2,_results[1].X);
             Assert.AreEqual(1,_results[1].Y);
         }
 

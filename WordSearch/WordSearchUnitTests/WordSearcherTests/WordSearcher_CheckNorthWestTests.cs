@@ -34,7 +34,7 @@ namespace WordSearchUnitTests.WordSearcherTests
             string word = "EA";
 
             _searcher = new WordSearcher();
-            _results = _searcher.CheckNorthEast(_board, coordinate, word);
+            _results = _searcher.CheckNorthWest(_board, coordinate, word);
             
             Assert.AreEqual(2, _results.Count);
             Assert.AreEqual(1,_results[0].X);
