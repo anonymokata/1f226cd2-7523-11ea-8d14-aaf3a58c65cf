@@ -61,6 +61,7 @@
         </e>
         <e p="WordSearchGameTests" t="Include">
           <e p="WordSearchGame_ConstructorTests.cs" t="Include" />
+          <e p="WordSearchGame_GetWordsAndCoordinatesTests.cs" t="Include" />
           <e p="WordSearchGame_GetWordsListTests.cs" t="Include" />
           <e p="WordSearchGame_ToStringTests.cs" t="Include" />
         </e>
