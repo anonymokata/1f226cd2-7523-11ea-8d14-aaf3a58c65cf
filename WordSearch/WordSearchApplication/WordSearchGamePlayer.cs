@@ -6,11 +6,11 @@ using WordSearchApplication.Models;
 
 namespace WordSearchApplication
 {
-    public class WordSearchGamePlayer
+    public static class WordSearchGamePlayer
     {
         private static void Main(string[] args)
         {
-            Console.WriteLine("Hello! My name is Jacob Kessler and this is my implementation of the Word Search Kata.");
+            Console.WriteLine("Hello! This is my implementation of the Word Search Kata.");
 
             while (true)
             {
