@@ -41,7 +41,7 @@ namespace WordSearchApplication
             foreach (string word in GetWordsList())
             {
                 List<Coordinate> coordinatesOfFirstLetter = GetCoordinatesContainingChar(word[0]);
-                List<string> coordinateStrings = GetOccurancesOfWordGivenFirstLetterCoordinates(word, coordinatesOfFirstLetter);
+                List<string> coordinateStrings = GetOccurrencesOfWordGivenFirstLetterCoordinates(word, coordinatesOfFirstLetter);
 
                 if (coordinateStrings.Count > 0)
                 {
@@ -59,7 +59,7 @@ namespace WordSearchApplication
         /// <param name="word">The word we are currently searching for</param>
         /// <param name="coordinatesOfFirstLetter">A list of occurrences of the first letter of word on the board </param>
         /// <returns>Returns a list of occurrences of word on the board</returns>
-        private List<string> GetOccurancesOfWordGivenFirstLetterCoordinates(string word, List<Coordinate> coordinatesOfFirstLetter)
+        private List<string> GetOccurrencesOfWordGivenFirstLetterCoordinates(string word, List<Coordinate> coordinatesOfFirstLetter)
         {
             WordSearcher searcher = new WordSearcher();
             List<string> coordinateStrings = new List<string>();
