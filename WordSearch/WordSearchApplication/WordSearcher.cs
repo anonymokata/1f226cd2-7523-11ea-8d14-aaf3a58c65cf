@@ -36,7 +36,7 @@ namespace WordSearchApplication
                         return null;
                     }
                 }
-                catch (ArgumentException e)
+                catch (ArgumentException)
                 {
                     //ArgumentException here means that the tempCoordinate is pointed to an invalid coordinate off the board
                     return null;
@@ -74,7 +74,7 @@ namespace WordSearchApplication
                         return null;
                     }
                 }
-                catch (ArgumentException e)
+                catch (ArgumentException)
                 {
                     //ArgumentException here means that the tempCoordinate is pointed to an invalid coordinate off the board
                     return null;
@@ -112,7 +112,7 @@ namespace WordSearchApplication
                         return null;
                     }
                 }
-                catch (ArgumentException e)
+                catch (ArgumentException)
                 {
                     //ArgumentException here means that the tempCoordinate is pointed to an invalid coordinate off the board
                     //Return null because we know words cannot wrap around to another part of the board
@@ -151,7 +151,7 @@ namespace WordSearchApplication
                         return null;
                     }
                 }
-                catch (ArgumentException e)
+                catch (ArgumentException)
                 {
                     //ArgumentException here means that the tempCoordinate is pointed to an invalid coordinate off the board
                     return null;
@@ -189,7 +189,7 @@ namespace WordSearchApplication
                         return null;
                     }
                 }
-                catch (ArgumentException e)
+                catch (ArgumentException)
                 {
                     //ArgumentException here means that the tempCoordinate is pointed to an invalid coordinate off the board
                     return null;
@@ -227,7 +227,7 @@ namespace WordSearchApplication
                         return null;
                     }
                 }
-                catch (ArgumentException e)
+                catch (ArgumentException)
                 {
                     //ArgumentException here means that the tempCoordinate is pointed to an invalid coordinate off the board
                     return null;
@@ -265,7 +265,7 @@ namespace WordSearchApplication
                         return null;
                     }
                 }
-                catch (ArgumentException e)
+                catch (ArgumentException)
                 {
                     //ArgumentException here means that the tempCoordinate is pointed to an invalid coordinate off the board
                     return null;
@@ -303,7 +303,7 @@ namespace WordSearchApplication
                         return null;
                     }
                 }
-                catch (ArgumentException e)
+                catch (ArgumentException)
                 {
                     //ArgumentException here means that the tempCoordinate is pointed to an invalid coordinate off the board
                     return null;

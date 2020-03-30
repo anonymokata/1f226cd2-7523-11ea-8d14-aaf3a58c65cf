@@ -1,4 +1,3 @@
-using System;
 using System.Collections.Generic;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using WordSearchApplication;
@@ -8,7 +7,7 @@ namespace WordSearchUnitTests.WordSearchGameTests
     [TestClass]
     public class WordSearchGameGetWordsAndCoordinatesTests
     {
-        private WordSearchGame Game;
+        private WordSearchGame _game;
         
         [TestMethod]
         public void TestZeroWordsInWordListReturnEmptyDict()
@@ -20,8 +19,8 @@ namespace WordSearchUnitTests.WordSearchGameTests
             input.Add("T,W,O");
             input.Add("A,B,C");
             
-            Game = new WordSearchGame(input);
-            Dictionary<string, List<string>> output = Game.GetWordsAndCoordinates();
+            _game = new WordSearchGame(input);
+            Dictionary<string, List<string>> output = _game.GetWordsAndCoordinates();
 
             Assert.AreEqual(0,output.Count);
         }
@@ -36,8 +35,8 @@ namespace WordSearchUnitTests.WordSearchGameTests
             input.Add("T,W,O");
             input.Add("A,B,C");
             
-            Game = new WordSearchGame(input);
-            Dictionary<string, List<string>> output = Game.GetWordsAndCoordinates();
+            _game = new WordSearchGame(input);
+            Dictionary<string, List<string>> output = _game.GetWordsAndCoordinates();
 
             Assert.AreEqual(1,output.Count);
             Assert.AreEqual("(0,0),(1,0),(2,0)", output["ONE"][0]);
@@ -53,8 +52,8 @@ namespace WordSearchUnitTests.WordSearchGameTests
             input.Add("T,W,O");
             input.Add("A,B,C");
             
-            Game = new WordSearchGame(input);
-            Dictionary<string, List<string>> output = Game.GetWordsAndCoordinates();
+            _game = new WordSearchGame(input);
+            Dictionary<string, List<string>> output = _game.GetWordsAndCoordinates();
 
             Assert.AreEqual(14,output.Count);
             Assert.AreEqual("(0,0),(1,0),(2,0)", output["ONE"][0]);
@@ -72,8 +71,8 @@ namespace WordSearchUnitTests.WordSearchGameTests
             input.Add("T,W,O");
             input.Add("A,B,C");
             
-            Game = new WordSearchGame(input);
-            Dictionary<string, List<string>> output = Game.GetWordsAndCoordinates();
+            _game = new WordSearchGame(input);
+            Dictionary<string, List<string>> output = _game.GetWordsAndCoordinates();
 
             Assert.AreEqual(0,output.Count);
         }
@@ -88,8 +87,8 @@ namespace WordSearchUnitTests.WordSearchGameTests
             input.Add("J,C,K");
             input.Add("A,B,C");
             
-            Game = new WordSearchGame(input);
-            Dictionary<string, List<string>> output = Game.GetWordsAndCoordinates();
+            _game = new WordSearchGame(input);
+            Dictionary<string, List<string>> output = _game.GetWordsAndCoordinates();
 
             Assert.AreEqual(1,output.Count);
             Assert.AreEqual("(0,1),(1,1),(2,1)", output["JCK"][0]);
@@ -105,8 +104,8 @@ namespace WordSearchUnitTests.WordSearchGameTests
             input.Add("J,C,K");
             input.Add("I,H,C");
             
-            Game = new WordSearchGame(input);
-            Dictionary<string, List<string>> output = Game.GetWordsAndCoordinates();
+            _game = new WordSearchGame(input);
+            Dictionary<string, List<string>> output = _game.GetWordsAndCoordinates();
 
             Assert.AreEqual(3,output.Count);
             Assert.AreEqual("(2,0),(1,0),(0,0)", output["ZYX"][0]);
@@ -124,8 +123,8 @@ namespace WordSearchUnitTests.WordSearchGameTests
             input.Add("W,V,U");
             input.Add("T,S,R");
             
-            Game = new WordSearchGame(input);
-            Dictionary<string, List<string>> output = Game.GetWordsAndCoordinates();
+            _game = new WordSearchGame(input);
+            Dictionary<string, List<string>> output = _game.GetWordsAndCoordinates();
 
             Assert.AreEqual(0,output.Count);
         }
@@ -140,8 +139,8 @@ namespace WordSearchUnitTests.WordSearchGameTests
             input.Add("W,A,U");
             input.Add("T,S,R");
             
-            Game = new WordSearchGame(input);
-            Dictionary<string, List<string>> output = Game.GetWordsAndCoordinates();
+            _game = new WordSearchGame(input);
+            Dictionary<string, List<string>> output = _game.GetWordsAndCoordinates();
 
             Assert.AreEqual(0,output.Count);
         }
@@ -156,8 +155,8 @@ namespace WordSearchUnitTests.WordSearchGameTests
             input.Add("A,A,A");
             input.Add("A,A,A");
             
-            Game = new WordSearchGame(input);
-            Dictionary<string, List<string>> output = Game.GetWordsAndCoordinates();
+            _game = new WordSearchGame(input);
+            Dictionary<string, List<string>> output = _game.GetWordsAndCoordinates();
 
             Assert.AreEqual(0,output.Count);
         }

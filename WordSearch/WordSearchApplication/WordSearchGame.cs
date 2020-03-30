@@ -98,7 +98,7 @@ namespace WordSearchApplication
             {
                 foreach (Coordinate coordinate in coordinates)
                 {
-                    output += coordinate.ToString() + ",";
+                    output += coordinate + ",";
                 }
             }
 

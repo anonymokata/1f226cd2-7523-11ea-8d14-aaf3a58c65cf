@@ -8,7 +8,7 @@ namespace WordSearchUnitTests.WordSearchGameTests
     [TestClass]
     public class WordSearchGameConstructorTests
     {
-        private WordSearchGame Game;
+        private WordSearchGame _game;
         
         [TestMethod]
         public void TestConstructorWithValidList()
@@ -20,14 +20,14 @@ namespace WordSearchUnitTests.WordSearchGameTests
             input.Add("T,W,O");
             input.Add("A,B,C");
             
-            Game = new WordSearchGame(input);
+            _game = new WordSearchGame(input);
         }
         
         [TestMethod]
         [ExpectedException(typeof(NullReferenceException))]
         public void TestConstructorWithNullInput()
         {
-            Game = new WordSearchGame(null);
+            _game = new WordSearchGame(null);
         }
         
         [TestMethod]
@@ -37,7 +37,7 @@ namespace WordSearchUnitTests.WordSearchGameTests
             List<string> input = new List<string>();
             input.Add(null);
             
-            Game = new WordSearchGame(input);
+            _game = new WordSearchGame(input);
         }
         
         [TestMethod]
@@ -47,7 +47,7 @@ namespace WordSearchUnitTests.WordSearchGameTests
             List<string> input = new List<string>();
             input.Add("");
             
-            Game = new WordSearchGame(input);
+            _game = new WordSearchGame(input);
         }
     }
 }

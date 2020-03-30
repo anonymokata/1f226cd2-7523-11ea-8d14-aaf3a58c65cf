@@ -7,7 +7,7 @@ namespace WordSearchUnitTests.WordSearchBoardTests
     [TestClass]
     public class WordSearchBoardGetLengthTests
     {
-        private WordSearchBoard Board;
+        private WordSearchBoard _board;
         
         [TestMethod]
         public void TestWithSmallBoard()
@@ -17,9 +17,9 @@ namespace WordSearchUnitTests.WordSearchBoardTests
             lines.Add("D,E,F");
             lines.Add("G,H,I");
             
-            Board = new WordSearchBoard(lines);
+            _board = new WordSearchBoard(lines);
 
-            Assert.AreEqual(3, Board.GetLength());
+            Assert.AreEqual(3, _board.GetLength());
         }
         
         [TestMethod]
@@ -28,9 +28,9 @@ namespace WordSearchUnitTests.WordSearchBoardTests
             List<string> lines = new List<string>();
             lines.Add("A");
 
-            Board = new WordSearchBoard(lines);
+            _board = new WordSearchBoard(lines);
 
-            Assert.AreEqual(1, Board.GetLength());
+            Assert.AreEqual(1, _board.GetLength());
         }
     }
 }

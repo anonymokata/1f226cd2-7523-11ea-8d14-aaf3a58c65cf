@@ -7,7 +7,7 @@ namespace WordSearchUnitTests.WordSearchGameTests
     [TestClass]
     public class WordSearchGameGetWordsListTests
     {
-        private WordSearchGame Game;
+        private WordSearchGame _game;
         
         [TestMethod]
         public void TestGetWordsListWithOneWordReturnsWordList()
@@ -19,10 +19,10 @@ namespace WordSearchUnitTests.WordSearchGameTests
             input.Add("T,W,O");
             input.Add("A,B,C");
             
-            Game = new WordSearchGame(input);
+            _game = new WordSearchGame(input);
             
-            Assert.AreEqual("ONE", Game.GetWordsList()[0]);
-            Assert.AreEqual(1, Game.GetWordsList().Count);
+            Assert.AreEqual("ONE", _game.GetWordsList()[0]);
+            Assert.AreEqual(1, _game.GetWordsList().Count);
         }
         
         [TestMethod]
@@ -35,12 +35,12 @@ namespace WordSearchUnitTests.WordSearchGameTests
             input.Add("T,W,O");
             input.Add("A,B,C");
             
-            Game = new WordSearchGame(input);
+            _game = new WordSearchGame(input);
             
-            Assert.AreEqual("ONE", Game.GetWordsList()[0]);
-            Assert.AreEqual("TWO", Game.GetWordsList()[1]);
-            Assert.AreEqual("ABC", Game.GetWordsList()[2]);
-            Assert.AreEqual(3, Game.GetWordsList().Count);
+            Assert.AreEqual("ONE", _game.GetWordsList()[0]);
+            Assert.AreEqual("TWO", _game.GetWordsList()[1]);
+            Assert.AreEqual("ABC", _game.GetWordsList()[2]);
+            Assert.AreEqual(3, _game.GetWordsList().Count);
         }
         
         [TestMethod]
@@ -53,9 +53,9 @@ namespace WordSearchUnitTests.WordSearchGameTests
             input.Add("T,W,O");
             input.Add("A,B,C");
             
-            Game = new WordSearchGame(input);
+            _game = new WordSearchGame(input);
             
-            Assert.AreEqual(0, Game.GetWordsList().Count);
+            Assert.AreEqual(0, _game.GetWordsList().Count);
         }
     }
 }

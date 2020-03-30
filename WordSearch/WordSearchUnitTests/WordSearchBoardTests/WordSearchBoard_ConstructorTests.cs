@@ -8,13 +8,13 @@ namespace WordSearchUnitTests.WordSearchBoardTests
     [TestClass]
     public class WordSearchBoardConstructorTests
     {
-        private WordSearchBoard Board;
+        private WordSearchBoard _board;
         
         [TestMethod]
         [ExpectedException(typeof(NullReferenceException))]
         public void TestNullInputThrowsException()
         {
-            Board = new WordSearchBoard(null);
+            _board = new WordSearchBoard(null);
         }
         
         [TestMethod]
@@ -26,7 +26,7 @@ namespace WordSearchUnitTests.WordSearchBoardTests
             lines.Add(null);
             lines.Add(null);
             
-            Board = new WordSearchBoard(lines);
+            _board = new WordSearchBoard(lines);
         }
         
         [TestMethod]
@@ -38,7 +38,7 @@ namespace WordSearchUnitTests.WordSearchBoardTests
             lines.Add("");
             lines.Add("");
             
-            Board = new WordSearchBoard(lines);
+            _board = new WordSearchBoard(lines);
         }
         
         [TestMethod]
@@ -49,7 +49,7 @@ namespace WordSearchUnitTests.WordSearchBoardTests
             lines.Add("D,E,F");
             lines.Add("G,H,I");
             
-            Board = new WordSearchBoard(lines);
+            _board = new WordSearchBoard(lines);
         }
     }
 }

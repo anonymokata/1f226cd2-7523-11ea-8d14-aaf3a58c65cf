@@ -8,7 +8,7 @@ namespace WordSearchUnitTests.WordSearchBoardTests
     [TestClass]
     public class WordSearchBoardGetCharAtWithCoordinateTests
     {
-        private WordSearchBoard Board;
+        private WordSearchBoard _board;
         
         [TestMethod]
         public void TestWithValidXY()
@@ -18,19 +18,19 @@ namespace WordSearchUnitTests.WordSearchBoardTests
             lines.Add("D,E,F");
             lines.Add("G,H,I");
 
-            Board = new WordSearchBoard(lines);
+            _board = new WordSearchBoard(lines);
 
-            Assert.AreEqual('A', Board.GetCharAt(new Coordinate(0,0)));
-            Assert.AreEqual('B', Board.GetCharAt(new Coordinate(1,0)));
-            Assert.AreEqual('C', Board.GetCharAt(new Coordinate(2,0)));
+            Assert.AreEqual('A', _board.GetCharAt(new Coordinate(0,0)));
+            Assert.AreEqual('B', _board.GetCharAt(new Coordinate(1,0)));
+            Assert.AreEqual('C', _board.GetCharAt(new Coordinate(2,0)));
             
-            Assert.AreEqual('D', Board.GetCharAt(new Coordinate(0,1)));
-            Assert.AreEqual('E', Board.GetCharAt(new Coordinate(1,1)));
-            Assert.AreEqual('F', Board.GetCharAt(new Coordinate(2,1)));
+            Assert.AreEqual('D', _board.GetCharAt(new Coordinate(0,1)));
+            Assert.AreEqual('E', _board.GetCharAt(new Coordinate(1,1)));
+            Assert.AreEqual('F', _board.GetCharAt(new Coordinate(2,1)));
             
-            Assert.AreEqual('G', Board.GetCharAt(new Coordinate(0,2)));
-            Assert.AreEqual('H', Board.GetCharAt(new Coordinate(1,2)));
-            Assert.AreEqual('I', Board.GetCharAt(new Coordinate(2,2)));
+            Assert.AreEqual('G', _board.GetCharAt(new Coordinate(0,2)));
+            Assert.AreEqual('H', _board.GetCharAt(new Coordinate(1,2)));
+            Assert.AreEqual('I', _board.GetCharAt(new Coordinate(2,2)));
         }
         
         [TestMethod]
@@ -42,8 +42,8 @@ namespace WordSearchUnitTests.WordSearchBoardTests
             lines.Add("D,E,F");
             lines.Add("G,H,I");
 
-            Board = new WordSearchBoard(lines);
-            Board.GetCharAt(new Coordinate(-1,0));
+            _board = new WordSearchBoard(lines);
+            _board.GetCharAt(new Coordinate(-1,0));
         }
         
         [TestMethod]
@@ -55,8 +55,8 @@ namespace WordSearchUnitTests.WordSearchBoardTests
             lines.Add("D,E,F");
             lines.Add("G,H,I");
 
-            Board = new WordSearchBoard(lines);
-            Board.GetCharAt(new Coordinate(0,-1));
+            _board = new WordSearchBoard(lines);
+            _board.GetCharAt(new Coordinate(0,-1));
         }
         
         [TestMethod]
@@ -68,8 +68,8 @@ namespace WordSearchUnitTests.WordSearchBoardTests
             lines.Add("D,E,F");
             lines.Add("G,H,I");
 
-            Board = new WordSearchBoard(lines);
-            Board.GetCharAt(new Coordinate(3,0));
+            _board = new WordSearchBoard(lines);
+            _board.GetCharAt(new Coordinate(3,0));
         }
         
         [TestMethod]
@@ -81,8 +81,8 @@ namespace WordSearchUnitTests.WordSearchBoardTests
             lines.Add("D,E,F");
             lines.Add("G,H,I");
 
-            Board = new WordSearchBoard(lines);
-            Board.GetCharAt(new Coordinate(0,3));
+            _board = new WordSearchBoard(lines);
+            _board.GetCharAt(new Coordinate(0,3));
         }
     }
 }

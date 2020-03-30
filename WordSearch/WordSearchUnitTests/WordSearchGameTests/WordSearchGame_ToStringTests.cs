@@ -1,14 +1,13 @@
 using System.Collections.Generic;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using WordSearchApplication;
-using WordSearchApplication.Models;
 
 namespace WordSearchUnitTests.WordSearchGameTests
 {
     [TestClass]
     public class WordSearchGameToStringTests
     {
-        private WordSearchGame Game;
+        private WordSearchGame _game;
         
         [TestMethod]
         public void TestToStringReturnsStringOfBoard()
@@ -19,9 +18,9 @@ namespace WordSearchUnitTests.WordSearchGameTests
             lines.Add("D,E,F");
             lines.Add("G,H,I");
             
-            Game = new WordSearchGame(lines);
+            _game = new WordSearchGame(lines);
 
-            Assert.AreEqual("A,B,C\nD,E,F\nG,H,I", Game.ToString());
+            Assert.AreEqual("A,B,C\nD,E,F\nG,H,I", _game.ToString());
         }
     }
 }

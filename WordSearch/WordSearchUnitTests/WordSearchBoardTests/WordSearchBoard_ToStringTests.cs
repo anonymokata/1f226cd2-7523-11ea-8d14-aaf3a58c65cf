@@ -7,7 +7,7 @@ namespace WordSearchUnitTests.WordSearchBoardTests
     [TestClass]
     public class WordSearchBoardToStringTests
     {
-        private WordSearchBoard Board;
+        private WordSearchBoard _board;
         
         [TestMethod]
         public void TestToString()
@@ -17,9 +17,9 @@ namespace WordSearchUnitTests.WordSearchBoardTests
             lines.Add("D,E,F");
             lines.Add("G,H,I");
             
-            Board = new WordSearchBoard(lines);
+            _board = new WordSearchBoard(lines);
 
-            Assert.AreEqual("A,B,C\nD,E,F\nG,H,I", Board.ToString());
+            Assert.AreEqual("A,B,C\nD,E,F\nG,H,I", _board.ToString());
         }
     }
 }
