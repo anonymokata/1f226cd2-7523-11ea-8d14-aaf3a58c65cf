@@ -20,7 +20,7 @@ namespace WordSearchApplication
                 if (filePath == "quit") break;
                 
                 string[] linesFromFile;
-                
+
                 try
                 {
                     linesFromFile = File.ReadAllLines(filePath);
@@ -28,6 +28,12 @@ namespace WordSearchApplication
                 catch (DirectoryNotFoundException e)
                 {
                     Console.WriteLine("I'm sorry, I couldn't find that directory. Message: " + e.Message);
+                    Console.WriteLine("Please try again!");
+                    continue;
+                }
+                catch (FileNotFoundException e)
+                {
+                    Console.WriteLine("I'm sorry, I couldn't find that file. Message: " + e.Message);
                     Console.WriteLine("Please try again!");
                     continue;
                 }

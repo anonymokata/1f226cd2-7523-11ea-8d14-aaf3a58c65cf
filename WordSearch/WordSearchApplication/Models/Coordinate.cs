@@ -11,6 +11,10 @@ namespace WordSearchApplication.Models
             this.Y = y;
         }
 
+        /// <summary>
+        /// Returns a string representation of the coordinate
+        /// </summary>
+        /// <returns>Returns a string representation of the coordinate: (x,y)</returns>
         public override string ToString()
         {
             return "(" + X + "," + Y + ")";
