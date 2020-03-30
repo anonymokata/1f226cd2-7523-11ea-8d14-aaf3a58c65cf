@@ -4,6 +4,56 @@
     "/Users/jacobkessler/RiderProjects/KataWordSearch/WordSearch/WordSearchUnitTests/WordSearchUnitTests.csproj": {}
   },
   "projects": {
+    "/Users/jacobkessler/RiderProjects/KataWordSearch/WordSearch/WordSearchApplication/WordSearchApplication.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/jacobkessler/RiderProjects/KataWordSearch/WordSearch/WordSearchApplication/WordSearchApplication.csproj",
+        "projectName": "WordSearchApplication",
+        "projectPath": "/Users/jacobkessler/RiderProjects/KataWordSearch/WordSearch/WordSearchApplication/WordSearchApplication.csproj",
+        "packagesPath": "/Users/jacobkessler/.nuget/packages/",
+        "outputPath": "/Users/jacobkessler/RiderProjects/KataWordSearch/WordSearch/WordSearchApplication/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/jacobkessler/.config/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/3.1.201/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
     "/Users/jacobkessler/RiderProjects/KataWordSearch/WordSearch/WordSearchUnitTests/WordSearchUnitTests.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -24,7 +74,11 @@
         },
         "frameworks": {
           "netcoreapp3.1": {
-            "projectReferences": {}
+            "projectReferences": {
+              "/Users/jacobkessler/RiderProjects/KataWordSearch/WordSearch/WordSearchApplication/WordSearchApplication.csproj": {
+                "projectPath": "/Users/jacobkessler/RiderProjects/KataWordSearch/WordSearch/WordSearchApplication/WordSearchApplication.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
@@ -68,7 +122,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/Users/jacobkessler/.dotnet/sdk/3.1.102/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/3.1.201/RuntimeIdentifierGraph.json"
         }
       }
     }

@@ -14,6 +14,10 @@
       <e p="WordSearch.sln" t="IncludeFlat" />
       <e p="WordSearchApplication" t="IncludeRecursive">
         <e p="bin" t="ExcludeRecursive" />
+        <e p="Models" t="Include">
+          <e p="Coordinate.cs" t="Include" />
+          <e p="WordSearchBoard.cs" t="Include" />
+        </e>
         <e p="obj" t="ExcludeRecursive">
           <e p="Debug" t="Include">
             <e p="netcoreapp3.1" t="Include">
@@ -21,11 +25,17 @@
             </e>
           </e>
         </e>
-        <e p="Program.cs" t="Include" />
         <e p="WordSearchApplication.csproj" t="IncludeRecursive" />
+        <e p="WordSearcher.cs" t="Include" />
+        <e p="WordSearchGame.cs" t="Include" />
+        <e p="WordSearchGamePlayer.cs" t="Include" />
       </e>
       <e p="WordSearchUnitTests" t="IncludeRecursive">
         <e p="bin" t="ExcludeRecursive" />
+        <e p="CoordinateTests" t="Include">
+          <e p="Coordinate_ConstructorTests.cs" t="Include" />
+          <e p="Coordinate_ToStringTests.cs" t="Include" />
+        </e>
         <e p="obj" t="ExcludeRecursive">
           <e p="Debug" t="Include">
             <e p="netcoreapp3.1" t="Include">
@@ -33,7 +43,29 @@
             </e>
           </e>
         </e>
-        <e p="UnitTest1.cs" t="Include" />
+        <e p="WordSearchBoardTests" t="Include">
+          <e p="WordSearchBoard_ConstructorTests.cs" t="Include" />
+          <e p="WordSearchBoard_GetCharAtTests.cs" t="Include" />
+          <e p="WordSearchBoard_GetCharAtWithCoordinateTests.cs" t="Include" />
+          <e p="WordSearchBoard_GetLengthTests.cs" t="Include" />
+          <e p="WordSearchBoard_ToStringTests.cs" t="Include" />
+        </e>
+        <e p="WordSearcherTests" t="Include">
+          <e p="WordSearcher_CheckEastTests.cs" t="Include" />
+          <e p="WordSearcher_CheckNorthEastTests.cs" t="Include" />
+          <e p="WordSearcher_CheckNorthTests.cs" t="Include" />
+          <e p="WordSearcher_CheckNorthWestTests.cs" t="Include" />
+          <e p="WordSearcher_CheckSouthEastTests.cs" t="Include" />
+          <e p="WordSearcher_CheckSouthTests.cs" t="Include" />
+          <e p="WordSearcher_CheckSouthWestTests.cs" t="Include" />
+          <e p="WordSearcher_CheckWestTests.cs" t="Include" />
+        </e>
+        <e p="WordSearchGameTests" t="Include">
+          <e p="WordSearchGame_ConstructorTests.cs" t="Include" />
+          <e p="WordSearchGame_GetWordsAndCoordinatesTests.cs" t="Include" />
+          <e p="WordSearchGame_GetWordsListTests.cs" t="Include" />
+          <e p="WordSearchGame_ToStringTests.cs" t="Include" />
+        </e>
         <e p="WordSearchUnitTests.csproj" t="IncludeRecursive" />
       </e>
     </e>
